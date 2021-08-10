@@ -134,6 +134,7 @@ a:hover {
   background-color: white;
   color: #2d97cc;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 
 /* styles of footer section of social media icons*/
