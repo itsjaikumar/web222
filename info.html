@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayakumar Reddy Rachamalla</title>
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+  <body onload="backgroundChange()">
+    <div class="container2">
+      <div class="header">
+        <img src="img/logo.jpg" alt="logo" />
+        <h3>Web Development</h3>
+      </div>
+      <div class="navigation">
+        <a href="honesty.html" id="honesty">Honesty</a>
+        <a href="info.html" id="info">Info</a>
+        <a href="reflection.html" id="reflection">Reflection</a>
+      </div>
+      <div class="content">
+        <form action="https://httpbin.org/post" method="post" id="form">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required /><br /><br />
+          <label for="pass">Password:</label>
+          <input type="text" id="pass" name="pass" required /><br /><br />
+          <label for="pass2">Re-enter Password:</label>
+          <input type="text" id="pass2" name="pass2" required /><br /><br />
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+          <label for="edulevel">Education Level: </label>
+          <select id="edulevel" name="edulevel" required>
+            <option value="">Select</option>
+            <option value="technicaldiploma">Technical Diploma</option>
+            <option value="collegediploma">College Diploma</option>
+            <option value="bachelor'sdegree">Bachelor's Degree</option>
+            <option value="master'sdegree">Master's Degree</option>
+            <option value="others">Others</option>
+          </select>
+          <p>Education Status:</p>
+           
+          <input
+            type="radio"
+            id="graduated"
+            name="edu_status"
+            value="Graduated"
+            required
+          />
+            <label for="graduated">Graduated</label><br />
+           
+          <input
+            type="radio"
+            id="current_enrolled"
+            name="edu_status"
+            value="Current Enrolled"
+            required
+          />
+            <label for="current_enrolled">Current Enrolled</label><br />
+           
+          <input
+            type="radio"
+            id="did_not_graduate"
+            name="edu_status"
+            value="Did Not Graduate"
+            required
+          />
+            <label for="did_not_graduate">Did Not Graduate</label><br /><br />
+          <label for="email">Enter your email: </label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="age">Age: </label>
+          <input type="number" id="age" name="age" min="18" max="60" required />
+          <input
+            type="hidden"
+            name="lastName"
+            id="lastName"
+            value="Rachamalla"
+          />
+          <input
+            type="hidden"
+            name="studentId"
+            id="studentId"
+            value="165011198"
+          />
+          <input type="submit" value="Signup" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+      <div id="sidebar">
+        <h2>Errors</h2>
+        <br /><br />
+        <p id="errors"></p>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+    <script src="info.js"></script>
+  </body>
+</html>
